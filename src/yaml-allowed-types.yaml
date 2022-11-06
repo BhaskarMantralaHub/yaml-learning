@@ -1,0 +1,76 @@
+#key value pairs
+#strings
+first_name: Bhaskar
+last_name: "Mantrala"
+maternal_name: 'none'
+
+#number
+age: 30
+marks: 97.56
+
+#boolean
+married: yes
+Possible boolean values:
+  y|Y|yes|Yes|YES|n|N|no|No|NO
+  |true|True|TRUE|false|False|FALSE
+  |on|On|ON|off|Off|OFF
+
+#--------------------------------------------------------------------------------------------------------------
+#new line - Multiple sentences
+full_name: |
+  Bhaskar
+  Mantrala
+real_age: 30
+
+#YAML to JSON
+#{
+#  "name": "Bhaskar\nMantrala\n",
+#  "age": 30
+#}
+
+#Single sentence in multiple lines
+full_name1: >
+  Bhaskar
+  Mantrala
+  Hub
+real_age1: 30
+
+#YAML to JSON
+#{
+#  "full_name1": "Bhaskar Mantrala Hub\n",
+#  "real_age1": 30
+#}
+
+
+#--------------------------------------------------------------------------------------------------------------
+
+#list
+
+languages:
+  - Java
+  - Javascript
+  - Typescript
+  - Python
+
+#list
+profiles: [github, bitbucket, linkedin]
+
+#object
+profile: {github: "github.com", linkedin: "linkedin.com"}
+
+#Values with new lines
+address:
+  lines: |
+    458 Walkman Dr.
+    Suite #292
+    CA
+    USA
+
+#YAML to JSON
+#"address": "458 Walkman Dr.\nSuite #292\nCA\nUSA\n"
+
+--- #start of new document
+
+
+#end of file
+...

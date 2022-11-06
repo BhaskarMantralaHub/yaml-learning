@@ -1,0 +1,35 @@
+#numbers
+age: !!int "30"
+
+#Yaml to Json
+#{
+#  "age": 30
+#}
+
+#--------------------------------------------------------------------------------------------------------------
+
+#float
+salary: !!float 685.230
+
+#--------------------------------------------------------------------------------------------------------------
+
+#boolean and string
+marriedString: !!str No #string
+#Yaml to Json
+#{
+#  "marriedString": "No"
+#}
+
+marriedBoolean: !!bool No #string #Doesn't accept
+#https://yaml.org/spec/1.2.2/
+
+#Acceptable ones
+marriedBoolean1: !!bool true
+marriedBoolean2: !!bool false
+
+#--------------------------------------------------------------------------------------------------------------
+#Null value
+null_value: !!null Null
+null_value1: !!null null
+null_value2: !!null NULL
+null_value3: !!null ~

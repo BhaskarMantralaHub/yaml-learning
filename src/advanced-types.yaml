@@ -1,0 +1,8 @@
+#sequence
+
+#set
+names: !!set ["bhaskar", "sarma"]
+
+#pairs
+
+#dictionary

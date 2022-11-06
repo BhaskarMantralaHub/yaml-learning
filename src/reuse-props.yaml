@@ -1,0 +1,35 @@
+#anchors
+addressAndPhone: &address
+  state: New Jersey
+  street: 204 Avenue
+  country: USA
+  phone: 1234567899
+
+joint_account:
+  applicant:
+    name: Bhaskar
+    address: *address
+
+
+  coApplicant:
+    name: Mantrala
+    address:
+      <<: *address
+      phone: 8234567899 #override property
+      applicant_type: 'joint'
+
+
+#--------------------------------------------------------------------
+addressAndPhone1:
+  state: New Jersey
+  street: 204 Avenue
+  country: USA
+  phone: &phone 1234567899
+cellPhone: *phone
+
+#--------------------------------------------------------------------
+
+name: Bhaskar
+fullName: &name BhaskarMantrala
+address:
+  name: *name #fullname will be printed
