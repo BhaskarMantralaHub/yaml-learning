@@ -5,6 +5,13 @@ addressAndPhone: &address
   country: USA
   phone: 1234567899
 
+
+"fruit": [
+  "apple",
+  "orange",
+  "banana"
+]
+
 joint_account:
   applicant:
     name: Bhaskar
@@ -28,7 +35,6 @@ addressAndPhone1:
 cellPhone: *phone
 
 #--------------------------------------------------------------------
-
 name: Bhaskar
 fullName: &name BhaskarMantrala
 address:
