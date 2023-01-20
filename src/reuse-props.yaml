@@ -6,7 +6,7 @@ addressAndPhone: &address
   phone: 1234567899
 
 
-"fruit": [
+"fruit": &fruit [
   "apple",
   "orange",
   "banana"
@@ -39,3 +39,21 @@ name: Bhaskar
 fullName: &name BhaskarMantrala
 address:
   name: *name #fullname will be printed
+
+"CCA_Application": &CCA_Application [
+    "CCA_Application_TEST1",
+    "CCA_Application_TEST2",
+    "CCA_Application_TEST3"
+]
+
+"CCA_Document": &CCA_Document
+    - *fruit
+    - "CCA_Document_TEST1"
+    - "CCA_Document_TEST2"
+    - "CCA_Document_TEST3"
+
+"CCA_Sanity":
+  - *CCA_Application
+  - *CCA_Document
+  - LAD-1234
+  - LAD-2345
